@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Event Page</title>
+
+
+        <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href='css/style_caleder.css' rel='stylesheet' />
+        <link href='css/ullcalendar.print.css' rel='stylesheet' media='print' />
+
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <script src='js/moment.min.js'></script>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/fullcalendar.min.js'></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+
+        <script>
+
+            $(document).ready(function () {
+
+                $('#calendar1').fullCalendar({
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    }
+
+                });
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row event-top-button">
+                <div class="col-md-3">
+                    <button class="btn btn-default btn-event-top"><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span></button>
+                    <button class="btn btn-danger btn-event-top">SAVE</button>
+                    <button class="btn btn-default btn-event-top">DISCARD</button>
+                </div>
+
+            </div>
+            <div class="row event-untitled">
+                <div class="col-md-7">
+                    <input type="text" class="form-control" placeholder="Untitled event">
+                </div>
+            </div>
+            <div class="row event-time">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-1">
+                           <p> To</p>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#">TIME ZONE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row event-check">
+                <div class="col-md-2">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            All Day
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Repeat...
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row event-tab">
+                <div role="tabpanel">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#event" aria-controls="event" role="tab" data-toggle="tab">Events Details</a></li>
+                        <li role="presentation"><a href="#find" aria-controls="find" role="tab" data-toggle="tab">Find a time</a></li>
+
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="event">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">Where</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="inputEmail3" placeholder="Enter a location">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-3 control-label">Video call</label>
+                                            <div class="col-sm-9">
+                                                <a href="#">Add a video call</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">calender</label>
+                                            <div class="col-sm-9">
+                                                <select  >
+                                                    <option>Azmul Hossain</option>
+                                                    <option>Azmul Hossain</option>
+                                                    <option>Azmul Hossain</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-3 control-label">Description</label>
+                                            <div class="col-sm-9">
+                                               <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                                
+                                <div class="col-md-5">
+                                    <h5>Add Guest</h5>
+                                    <input  placeholder="Enter Email Address ">
+                                    <br/>
+                                    <button class="btn btn-default">Add</button>
+                                    <h5>Guest can</h5>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        Modify Event
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        invite Others
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        See guest list
+                                      </label>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="find">
+                           <div class="col-md-7">
+                               <div id='calendar1'></div>
+                           </div>
+                           <div class="col-md-5">
+                                <div class="col-md-5">
+                                    <h5>Add Guest</h5>
+                                    <input  placeholder="Enter Email Address ">
+                                    <br/>
+                                    <button class="btn btn-default">Add</button>
+                                    <h5>Guest can</h5>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        Modify Event
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        invite Others
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox" value="">
+                                        See guest list
+                                      </label>
+                                    </div>
+                                    
+                                </div>
+                           </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="row event-show">
+                <div class="col-md-2">
+                    <h5>Show me as</h5>
+                </div>
+                <div class="col-md-2">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                        Available
+                      </label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Busy
+                      </label>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="row event-show">
+                <div class="col-md-2">
+                    <h5>Visibility</h5>
+                </div>
+                <div class="col-md-2">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                        Calendar default
+                      </label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Public
+                      </label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Private
+                      </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row event-para">
+                <div class="col-md-7 col-md-offset-2">
+                    <p>
+                        By default this event will follow the<a href="#"> sharing</a> settings of this calendar: event details will be visible to anyone who can see details of other events in this calendar. <a href="#"> Learn more</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

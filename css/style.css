@@ -1,0 +1,420 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 11, 2015, 11:32:05 PM
+    Author     : AZMUL HOSSAIN
+*/
+body,html{
+    font-family: 'Slabo 27px', serif;
+    padding: 10px 15px 0 15px;
+}
+
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn {
+    border-radius: 0px;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: red;
+    font-size: 30px;
+}
+.main-body {
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 29px;
+
+}
+.btn-group.menu-more {
+    margin-left: 20px;
+}
+.btn-menu{
+    background-color: #FDF8F8;
+}
+span.caret.calender-caret {
+    border-top: 14px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #ffffff; 
+    border-color: #ffffff; 
+}
+.panel-heading {
+    padding: 5px 0px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.glyphicon {
+    margin-right: 9px;
+}
+span.caret.caret-mycalender.ng-scope {
+    margin-left: 70px;
+}
+span.span-border {
+    padding: 0px 4px;
+    float: right;
+}
+span.span-border1 {
+    width: 10px;
+    height: 10px;
+    color: red;
+
+}
+.my-calender {
+    margin-top: 29px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.element1, .element2, .element3 {
+    font-size: 18px;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+span.caret.caret-mycalender-next {
+    border-top: 9px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+.my-calender-bottom {
+    margin-top: 26px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input.form-control.add-friends-calender {
+    width: 97%;
+    height: 31px;
+}
+
+.row.bottom-function-start {
+    border-top: 1px solid #F4EDED;;
+    margin-top: 25px;
+}
+span.ui-datepicker-month {
+    font-size: 18px;
+}
+
+button.btn.btn-danger.dropdown-toggle.create {
+    font-size: 21px;
+    padding: 2px 15px;
+}
+button.btn.btn-default.btn-menu {
+    font-size: 19px;
+    padding: 1px 19px;
+}
+
+.dropdown-menu>li>a {
+    font-size: 19px;
+}
+button.btn.btn-default.dropdown-toggle {
+    font-size: 20px;
+    padding: 1px 15px;
+    background-color: #FDF8F8;
+
+}
+
+nav.navbar.navbar-default.navbar-head-border {
+    border-bottom: 1px solid #F4EDED;
+}
+
+.fc .fc-button-group > * {
+    float: left;
+    margin: 0 0 0 -1px;
+    font-size: 19px;
+    padding: 0px 15px 0px 15px;
+    text-transform: uppercase;
+    background: #d9534f;
+    color: #fff;
+    border-radius: 0;
+}
+
+.fc .fc-toolbar > * > * {
+    float: left;
+    margin-left: .75em;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+button.btn-event-top {
+margin-right: 10px;
+font-size: 20px;
+}
+
+.row.event-top-button {
+
+border-bottom: 1px solid #F4EDED;
+padding-bottom: 10px;
+}
+.form-control{
+    border-radius: 0;
+    font-size: 17px;
+}
+
+.row.event-untitled {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.row.event-time p {
+font-size: 20px;
+}
+.row.event-time a {
+font-size: 20px;
+}
+
+.event-check .radio label, .checkbox label {
+font-size: 20px;
+}
+
+.row.event-tab  {
+margin-top: 10px;
+}
+
+.row.event-tab a , .row.event-tab label,.row.event-tab h5{
+font-size: 20px;
+}
+.row.event-tab label,.row.event-tab h5{
+font-weight: normal;
+}
+
+.row.event-tab .btn-default{
+  margin-top: 5px;
+  font-size: 20px;
+}
+.row.event-tab input,.row.event-tab select{
+    height: 35px;
+    font-size: 17px;
+}
+.row.event-tab form{
+    margin-top: 10px;
+}
+
+.row.event-show h5, .row.event-show .radio label,.row.event-show .checkbox label{
+font-size: 20px;
+}
+
+.event-para p{
+    font-size: 17px;
+}
+
+@media (max-width: 420px) {  }
+@media (min-width: 421px) and (max-width: 768px) {
+    .row.bottom-function-start {
+        border-top: none;
+    }
+    .fc-toolbar {
+        margin-top: 32px;
+    }
+    .fc .fc-button-group > * {
+
+        font-size: 14px;
+
+    }
+    .fc .fc-toolbar > * > * {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+@media (min-width: 769px) and (max-width: 991px) { 
+    .fc .fc-button-group > * {
+        font-size: 20px;
+    }
+    .fc .fc-toolbar > * > * {
+        margin-top: 7px;
+    }
+    .col-md-2.col-sm-3.left-side {
+        margin-top: 6px;
+    }
+    .fc .fc-button-group > * {
+        font-size: 17px;
+    }
+    .fc .fc-toolbar > * > * {
+        font-size: 17px;
+    }
+     .fc-ltr .fc-basic-view .fc-day-number {
+font-size: 18px;
+}
+.fc th, .fc td {
+font-size: 17px;
+}
+
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+ .fc-ltr .fc-basic-view .fc-day-number {
+font-size: 22px;
+}
+.fc th, .fc td {
+font-size: 20px;
+}
+
+
+}
+@media (min-width: 1200px) { 
+   .fc-ltr .fc-basic-view .fc-day-number {
+font-size: 22px;
+}
+
+.fc th, .fc td {
+font-size: 20px;
+}
+
+}
+
+/*************** Calender Modify *****************/
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker td,
+.ui-datepicker th {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-spacing: 0;
+}
+.ui-datepicker {
+    display: none;
+    width: 294px;
+    padding: 0px 105px 0px 0;
+    cursor: default;
+
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 12px;
+
+    background: rgba(255,255,255,1);
+
+
+    .ui-datepicker-header {
+        position: relative;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .ui-datepicker-title { text-align: center; }
+
+    .ui-datepicker-month {
+        position: relative;
+        padding-right: 15px;
+        color: #565656;
+    }
+
+    .ui-datepicker-year {
+        padding-left: 8px;
+        color: #a8a8a8;
+    }
+    .ui-datepicker-month:before {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 5px;
+        height: 5px;
+        content: '';
+
+        background: #a5cd4e;
+        background: -moz-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+        background: -webkit-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+        background: -o-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+        background: -ms-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+        background: linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+        position: absolute;
+        top: -2px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .ui-datepicker-prev {
+        left: 0;
+        padding-left: 0;
+    }
+
+    .ui-datepicker-next {
+        right: 0;
+        padding-right: 0;
+    }
+
+    .ui-datepicker-prev span,
+    .ui-datepicker-next span{
+        display: block;
+        width: 5px;
+        height: 10px;
+        text-indent: -9999px;
+
+        background-image: url(../img/arrows.png);
+    }
+
+    .ui-datepicker-prev span { background-position: 0px 0px; }
+
+    .ui-datepicker-next span { background-position: -5px 0px; }
+
+    .ui-datepicker-prev-hover span { background-position: 0px -10px; }
+
+    .ui-datepicker-next-hover span { background-position: -5px -10px; }
+    .ui-datepicker-calendar th {
+        padding-top: 15px;
+        padding-bottom: 10px;
+
+        text-align: center;
+        font-weight: normal;
+        color: #a8a8a8;
+    }
+    .ui-datepicker-calendar td {
+        padding: 0 7px;
+
+        text-align: center;
+        line-height: 26px;
+    }
+
+    .ui-datepicker-calendar .ui-state-default {
+        display: block;
+        width: 26px;
+        outline: none;
+
+        text-decoration: none;
+        color: #a8a8a8;
+
+        border: 1px solid transparent;
+    }
+    .ui-datepicker-calendar .ui-state-active {
+        color: #6a9113;
+        border: 1px solid #6a9113;
+    }
+
+
+    .ui-widget-header{
+        border:none !important; 
+        background: #fff !important;
+        color: #000 !important;
+        font-weight: normal;
+    }
+
+    .ui-datepicker-other-month .ui-state-default { color: #565656; }
+
+

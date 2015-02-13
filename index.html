@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calender</title>
+
+
+        <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href='css/style_caleder.css' rel='stylesheet' />
+        <link href='css/ullcalendar.print.css' rel='stylesheet' media='print' />
+        
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <script src='js/moment.min.js'></script>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/fullcalendar.min.js'></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+
+        <script>
+
+            $(document).ready(function () {
+
+                $('#calendar1').fullCalendar({
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    }
+
+                });
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div class="row">
+      
+                <div class="col-md-2 col-sm-3 left-side"> 
+                     
+                    
+                        
+                    <!-- Single button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle create" data-toggle="dropdown">
+                            CREATE <span class="caret calender-caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                       <div class="row"> 
+                        <div class="col-xs-6">
+                    <div id="calendar"></div>
+                        </div>
+                   
+                    <!--My Calender part-->
+                    
+                    <div class="row bottom-function-start">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="my-calender">
+                                <span class="caret caret-mycalender-previous"></span> My Calenders <span class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><span class="span-border"><span class="caret caret-mycalender-next"></span></span></a>
+                                    <ul class="dropdown-menu" >
+                                        <li><a href="#">Craete new Calender</a></li>
+                                        <li><a href="#">Setting</a></li>
+
+                                    </ul>
+                                </span>
+                            </div>
+                            <div class="my-calender-slideshow">
+
+                                <div class="element1">
+                                    <span class="span-border1"></span>Azmul Hossain <span class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><span class="span-border"><span class="caret caret-mycalender-next"></span></span></a>
+
+                                        <ul class="dropdown-menu" >
+                                            <li><a href="#">Display on this calender</a></li>
+                                            <li><a href="#">Calender setting</a></li>
+                                            <li><a href="#">Create Event on this Calender</a></li>
+                                            <li><a href="#">Share this calender</a></li>
+                                            <li><a href="#">Edit Notifications</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+
+                                        </ul>
+                                    </span>
+                                </div>
+                                <div class="element2">
+                                    Birthdays <span class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><span class="span-border"><span class="caret caret-mycalender-next"></span></span></a>
+                                        <ul class="dropdown-menu" >
+                                            <li><a href="#">Display on this calender</a></li>
+                                            <li><a href="#">Calender setting</a></li>
+                                            <li><a href="#">Share this calender</a></li>
+                                            <li><a href="#">Send to friend</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+                                <div class="element3">
+                                    Tasks <span class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><span class="span-border"><span class="caret caret-mycalender-next"></span></span></a>
+                                        <ul class="dropdown-menu" >
+                                            <li><a href="#">Display on this calender</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+           
+                    <!--Second Part in left bottom-->  
+                    <div class="row bottom-function-start">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="my-calender-bottom">
+                                <span class="caret caret-mycalender-previous"></span> Others Calenders <span class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><span class="span-border"><span class="caret caret-mycalender-next"></span></span></a>
+                                    <ul class="dropdown-menu" >
+                                        <li><a href="#">Adds friend calender</a></li>
+                                        <li><a href="#">Browsers interesting calender</a></li>
+                                        <li><a href="#">Add by URL</a></li>
+                                        <li><a href="#">Import Calender</a></li>
+                                        <li><a href="#">Setting</a></li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <div class="my-calender-slideshow-bottom">
+
+                                <div class="element1">
+                                    <input class="form-control add-friends-calender" placeholder="adds a friends calender">
+                                </div>
+                                <div class="element2">
+                                    Holidays  <span class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><span class="span-border"><span class="caret caret-mycalender-next"></span></span></a>
+                                        <ul class="dropdown-menu" >
+                                            <li><a href="#">Display on this calender</a></li>
+                                            <li><a href="#">Calender setting</a></li>
+                                            <li><a href="#">Share this calender</a></li>
+                                            <li><a href="#">Send to friend</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                  
+                  </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <div id='calendar1'></div>
+            </div>
+        </div>
+
+     <script>
+            $('#calendar').datepicker({
+                inline: true,
+                firstDay: 1,
+                showOtherMonths: true,
+                dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+            });
+        </script>
+    </body>
+</html>
